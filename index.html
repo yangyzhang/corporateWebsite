@@ -4,18 +4,94 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script type="text/javascript" src="js/setHomeSetFav.js"></script>
-		<title>慕课网</title>
+		<script type="text/javascript" src="js/myfocus-2.0.1.min.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="js/mf-pattern/mF_fancy.css">
+		<script type="text/javascript" src="js/mf-pattern/mF_fancy.js"></script>
+		<script type="text/javascript">
+		myFocus.set({
+		    id:'boxID',//焦点图盒子ID
+		    pattern:'mF_fancy',//风格应用的名称
+		    time:3,//切换时间间隔(秒)
+		    trigger:'click',//触发切换模式:'click'(点击)/'mouseover'(悬停)
+		    width:640,//设置图片区域宽度(像素)
+		    height:316,//设置图片区域高度(像素)
+		    txtHeight:'default'//文字层高度设置(像素),'default'为默认高度，0为隐藏
+		});
+		</script>
+		<title>Bloomington Plumping company</title>
 	</head>
 	<body>
 		<div class="top">
 			<div class="top_content">
 				<ul>
-					<li><a onclick="SetHome(window.location)" href="#">设为首页</a></li>
-					<li><a onclick="AddFavorite(window.location,document.title)" href="#">加入收藏</a></li>
-					<li><a href="#">联系我们</a></li>
-					<div></div>
+					<li><a onclick="SetHome(window.location)" href="#">Set Home</a></li>
+					<li><a onclick="AddFavorite(window.location,document.title)" href="#">add Favorite</a></li>
+					<li><a href="#">Contact Us</a></li>
+					<div></div> <!-- clear float -->
 				</ul>
+			</div><!-- close top_content -->
+		</div><!-- close top -->
+		<div class="wrap">
+			<div class="logo">
+				<div class="logo_left">
+					<img src="images/logo.jpg" alt="logo">
+				</div>
+				<div class="logo_right">
+					<img src="images/tel.jpg" alt="tel_img">
+					TEL: <span>812-331-2117</span>
+				</div>
+			</div><!-- close logo -->
+			<div class="nav">
+				<ul>
+					<li><a href="#" title="HOME">HOME</a></li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">SERVICES</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div> <!-- close nav -->
+			<div class="middle">
+				<div class="middle_left">
+					<img src="images/gallery2.png"  class="tap"/>
+					<div class="ad" id="boxID">
+						<div class="pic">
+							<ul>
+								<li><img src="images/gallery1.jpg"></li>
+								<li><img src="images/gallery2.jpg"></li>
+								<li><img src="images/gallery3.jpg"></li>
+								<li><img src="images/gallery4.jpg"></li>
+								<li><img src="images/gallery5.jpg"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="middle_right"></div>
+
+			</div> <!-- close middle -->
+			<div class="main">
+				<div class="introduce">
+					<h2>WELCOME TO BLOOMINGTON PLUMBING COMPANY</h2>
+					<h3>YOUR LOCAL PLUMBING COMPANY WITH 25+ YEARS OF EXPERIENCE</h3>
+					<div class="intro_detail">
+						Bloomington Plumbing Co., Inc - a local independent plumbing contractor, small in size, big on service! Repairing all major brands - Delta - Moen - Kohler - Brizo - Hansgrohe - Indiana State licensed master plumber on every job! Don't be fooled by the rest - call the best!
+					</div>
+				</div>
+				<div class="service_intro">
+					<h2>SERVICES</h2>
+					<ul>
+						<li>Water Heaters</li>
+						<li>Garbage Disposals</li>
+						<li>Drains & TOILETS</li>
+						<li>Sump Pumps</li>
+						<li>Bathrooms</li>
+						<li>Kitchen Remodeling</li>
+						<li>Repairs & Installation</li>
+					</ul>
+				</div>
 			</div>
+		</div> <!-- close wrap -->
+		<div class="footer">
+			<div class="copyright">Copyright 2012 Blomington Plumbing Co., 8225 S. Rockport Rd., Bloomington, Indiana 47403 <div>
 		</div>
+			
 	</body>
 </html>
